@@ -53,9 +53,9 @@ X = [pregnancies, glucose, bloodpressure, skinthickness, insulin, bmi, diabetesp
 if tab_model.button('Tahmin Et!'):
     prediction = model.predict(pd.DataFrame(X).T)
     if prediction == 1:
-        tab_model.success(f'Diyabetsiniz çok geçmiş olsun.{prediction}')
+        tab_model.success(f'Diyabetsiniz çok geçmiş olsun.')
     else:
-        tab_model.success(f'Diyabet değilsiniz sağlıklı günler dileriz.{prediction}')
+        tab_model.success(f'Diyabet değilsiniz sağlıklı günler dileriz.')
         st.balloons()
 
 
